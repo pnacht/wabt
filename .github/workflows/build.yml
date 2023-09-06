@@ -24,6 +24,7 @@ jobs:
     - run: flake8
     - run: |
         git remote
+        git branch -r
         ./scripts/clang-format-diff.sh
       env:
         GITHUB_EVENT_BEFORE: ${{ github.event.before }}
@@ -42,6 +43,7 @@ jobs:
     - run: flake8
     - run: |
         git remote
+        git branch -r
         ./scripts/clang-format-diff.sh
       env:
         GITHUB_EVENT_BEFORE: ${{ github.event.before }}
