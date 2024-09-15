@@ -1,7 +1,7 @@
 #!/bin/bash
 
-set -o errexit
-set -o pipefail
+set -xo errexit
+set -xo pipefail
 
 if [ -n "$1" ]; then
   BRANCH="$1"
